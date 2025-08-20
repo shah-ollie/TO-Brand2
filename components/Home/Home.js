@@ -162,6 +162,20 @@ const Home = () => {
   useEffect(() => {
     Sal();
 
+    // Add fallback class for browsers that don't support :has() selector
+    document.body.classList.add('page-has-voice-widget');
+
+    // Ensure ElevenLabs widget is properly initialized
+    const checkWidget = () => {
+      const widgetElement = document.querySelector('elevenlabs-convai');
+      if (widgetElement) {
+        console.log('ElevenLabs widget found and ready');
+      }
+    };
+
+    // Check for widget after a short delay to allow for script loading
+    setTimeout(checkWidget, 1000);
+
     // Thanos snap animation sequence
     const thanosSequence = setTimeout(() => {
       setIsDisintegrating(true);
@@ -183,6 +197,9 @@ const Home = () => {
       clearTimeout(thanosSequence);
       clearTimeout(typewriterStart);
       stopTypewriter();
+      
+      // Cleanup fallback class
+      document.body.classList.remove('page-has-voice-widget');
     };
   }, []);
 
@@ -229,16 +246,14 @@ const Home = () => {
                   Where AI agents orchestrate perfect hiring decisions. <br />
                   Powered by the revolutionary A4S™ Framework.
                 </p>
-                <div className="form-group">
-                  <div className="cta-buttons d-flex flex-column flex-md-row justify-content-center gap-4">
-                    <Link className="btn-default btn-large" href="/contact">
-                      See Voice-First Screening in Action{" "}
-                      <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>
-                    </Link>
-                    <Link className="btn-default btn-large color-blacked" href="/signin">
-                      Start 14-Day Free Trial
-                    </Link>
-                  </div>
+                {/* Voice Widget - Simple Container */}
+                <div className="voice-widget-simple">
+                  <elevenlabs-convai agent-id="agent_5301k33fcctxe2svm3kbjda4pnb9"></elevenlabs-convai>
+                  <script 
+                    src="https://unpkg.com/@elevenlabs/convai-widget-embed" 
+                    async 
+                    type="text/javascript"
+                  ></script>
                 </div>
                 <div className="inner-shape">
                   <Image

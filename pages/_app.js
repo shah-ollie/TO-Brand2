@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-tooltip/dist/react-tooltip.css";
 import "../public/css/thanos-animation.css";
+import "../public/css/voice-widget.css";
 // ========= Plugins CSS END =========
 
 import "../public/scss/style.scss";

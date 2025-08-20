@@ -2,13 +2,13 @@
   "TabStyleOne": [
     {
       "title": "Voice-first AI screening scales interviews 5-10× faster than traditional methods.",
-      "img": "/images/generator-img/chat-export-vedio.png",
-      "imgLight": "/images/light/generator-img/chat-export-audio.png",
+      "img": "/images/generator-img/ollietalk.gif",
+      "imgLight": "/images/generator-img/ollietalk.gif",
       "menuId": "ollie-talk",
       "text": "Ollie Talk",
       "target": "ollie-talk-generate",
       "iconImg": "/images/icons/video-g.png",
-      "isSelect": false,
+      "isSelect": true,
       "subItem": [
         {
           "text": "Natural Language Processing"
@@ -32,7 +32,7 @@
       "text": "Ollie Scout",
       "target": "ollie-scout-generate",
       "iconImg": "/images/icons/audio-g.png",
-      "isSelect": true,
+      "isSelect": false,
       "subItem": [
         {
           "text": "Multi-platform Integration"

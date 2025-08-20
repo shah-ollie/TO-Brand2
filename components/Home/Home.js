@@ -351,14 +351,14 @@ const Home = () => {
                 data-sal-duration="700"
                 data-sal-delay="100"
               >
-                <h4 className="subtitle">
+                <h2 className="subtitle" style={{fontSize: '28px', fontWeight: '700', marginBottom: '16px'}}>
                   <span className="theme-gradient">
                     THE A4S™ FRAMEWORK POWERS PERFECT HIRING
                   </span>
-                </h4>
-                <h2 className="title mb--0">
-                  AI Agents orchestrate hiring <br /> from scorecard to onboarding.
                 </h2>
+                <h3 className="title mb--0" style={{fontSize: '36px', fontWeight: '500', opacity: '0.85'}}>
+                  AI Agents orchestrate hiring <br /> from scorecard to onboarding.
+                </h3>
               </div>
             </div>
           </div>

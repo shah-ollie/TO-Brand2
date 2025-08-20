@@ -9,8 +9,6 @@ import SplitImg from "../../public/images/split/split-2.png";
 import SplitLogo from "../../public/images/split/split-2-logo.png";
 import DarkSplitImg from "../../public/images/light/split/split-2.png";
 import DarkSplitLogo from "../../public/images/light/split/split-2-logo.png";
-import bannerImg from "../../public/images/bg/slider-main-image.png";
-import bannerWhiteImg from "../../public/images/light/bg/slider-main-image.png";
 import shapeOne from "../../public/images/bg/icon-shape/icon-shape-one.png";
 import shapeTwo from "../../public/images/bg/icon-shape/icon-shape-two.png";
 import shapeThree from "../../public/images/bg/icon-shape/icon-shape-three.png";
@@ -291,10 +289,10 @@ const Home = () => {
               <div className="slider-frame">
                 <Image
                   className="slider-image-effect"
-                  src={isLightTheme ? bannerImg : bannerWhiteImg}
+                  src="/images/bg/ollie-banner.gif"
                   width={1055}
-                  height={898}
-                  alt="Banner Images"
+                  height={848}
+                  alt="Ollie - Your AI Hiring Assistant"
                 />
               </div>
             </div>

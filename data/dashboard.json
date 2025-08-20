@@ -111,7 +111,7 @@
           "img": "/images/icons/loader-one.gif",
           "text": "Generating answers for you…",
           "aiImg": "/images/team/avater.png",
-          "title": "AiWave",
+          "title": "TalentOllie",
           "badge": "Bot",
           "desc2": "Website Roadmap title write me:",
           "desc": "Here's a fun fact about the Roman Empire: Ancient Romans used a condiment called garum in many of their dishes. Garum was a fermented fish sauce that served as a popular seasoning in Roman cuisine. It was made by fermenting fish, typically mackerel, with salt for several ermenting fish, typically mackerel, with salt for several weeks or months. The resulting liquid was then strainedweeks or months. The resulting liquid was then strained and used as a flavorful and salty condiment in various recipes."
@@ -121,33 +121,33 @@
     {
       "author": "/images/team/team-01sm.jpg",
       "title": "Adam Milner",
-      "desc": "How do AiWave work?",
+      "desc": "How do TalentOllie work?",
       "isBorder": true,
       "content": [
         {
           "img": "/images/icons/loader-one.gif",
           "text": "Generating answers for you…",
           "aiImg": "/images/team/avater.png",
-          "title": "AiWave",
+          "title": "TalentOllie",
           "badge": "Bot",
-          "desc2": "AiWave companies to easily resolve many types of customer queries:",
-          "desc": "AiWave boost operational efficiency and bring cost savings to businesses while offering convenience and added services to internal employees and external customers. They allow companies to easily resolve many types of customer queries and issues while reducing the need for human interaction."
+          "desc2": "TalentOllie companies to easily resolve many types of customer queries:",
+          "desc": "TalentOllie boost operational efficiency and bring cost savings to businesses while offering convenience and added services to internal employees and external customers. They allow companies to easily resolve many types of customer queries and issues while reducing the need for human interaction."
         }
       ]
     },
     {
       "author": "/images/team/team-01sm.jpg",
       "title": "Adam Milner",
-      "desc": "How can i talk with AiWave?",
+      "desc": "How can i talk with TalentOllie?",
       "isBorder": true,
       "content": [
         {
           "img": "/images/icons/loader-one.gif",
           "text": "Generating answers for you…",
           "aiImg": "/images/team/avater.png",
-          "title": "AiWave",
+          "title": "TalentOllie",
           "badge": "Bot",
-          "desc": "Adam Milner're already talking to a AiWave right now! Adam Milner can ask me anything or discuss various topics. Just type your questions or statements, and I'll do my best to provide helpful and informative responses.",
+          "desc": "Adam Milner're already talking to a TalentOllie right now! Adam Milner can ask me anything or discuss various topics. Just type your questions or statements, and I'll do my best to provide helpful and informative responses.",
           "desc2": "Certainly! Here's the result of your question:"
         }
       ]
@@ -155,17 +155,17 @@
     {
       "author": "/images/team/team-01sm.jpg",
       "title": "Adam Milner",
-      "desc": "Could I know Everything from AiWave?",
+      "desc": "Could I know Everything from TalentOllie?",
       "isBorder": false,
       "content": [
         {
           "img": "/images/icons/loader-one.gif",
           "text": "Generating answers for you…",
           "aiImg": "/images/team/avater.png",
-          "title": "AiWave",
+          "title": "TalentOllie",
           "badge": "Bot",
           "desc2": "Certainly! Here's the result of your question:",
-          "desc": "While AiWaveis a powerful language model that has been trained on a diverse range of internet text, it doesn't know everything. It has limitations"
+          "desc": "While TalentOllieis a powerful language model that has been trained on a diverse range of internet text, it doesn't know everything. It has limitations"
         }
       ]
     }
@@ -397,7 +397,7 @@
         },
         {
           "status": "fixed",
-          "text": "AiWave Core"
+          "text": "TalentOllie Core"
         },
         {
           "status": "improve",
@@ -437,7 +437,7 @@
         },
         {
           "status": "update",
-          "text": "AiWave Core"
+          "text": "TalentOllie Core"
         },
         {
           "status": "improve",
@@ -620,18 +620,18 @@
   ],
   "accordion": [
     {
-      "title": "What is AiWave ? How does it work?",
-      "desc": "AiWave is an AI-powered messaging platform that understands and responds to your natural language queries. Ask anything you'd typically ask a human assistant—get weather updates, news, restaurant recommendations, and more!",
+      "title": "What is TalentOllie ? How does it work?",
+      "desc": "TalentOllie is an AI-powered messaging platform that understands and responds to your natural language queries. Ask anything you'd typically ask a human assistant—get weather updates, news, restaurant recommendations, and more!",
       "isExpand": true
     },
     {
-      "title": "What kind of questions can I ask AiWave?",
-      "desc": "AiWave, an AI-driven messaging platform, adeptly communicates with users using natural language understanding. It delivers helpful responses to your inquiries and requests.",
+      "title": "What kind of questions can I ask TalentOllie?",
+      "desc": "TalentOllie, an AI-driven messaging platform, adeptly communicates with users using natural language understanding. It delivers helpful responses to your inquiries and requests.",
       "isExpand": false
     },
     {
       "title": "Can I get update regularly and For how long do I get updates?",
-      "desc": "Yes, We will get update the AiWave. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update.",
+      "desc": "Yes, We will get update the TalentOllie. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update.",
       "isExpand": false
     },
     {
@@ -640,13 +640,13 @@
       "isExpand": false
     },
     {
-      "title": "HIs my data safe with AiWave?",
-      "desc": "Feel free to toss any questions at AiWave, just like you would with a human helper—whether it's about the weather, the latest news, restaurant suggestions, or anything else you fancy!",
+      "title": "HIs my data safe with TalentOllie?",
+      "desc": "Feel free to toss any questions at TalentOllie, just like you would with a human helper—whether it's about the weather, the latest news, restaurant suggestions, or anything else you fancy!",
       "isExpand": false
     },
     {
-      "title": "Is AiWave available in multiple languages?",
-      "desc": "Yes, AiWave is designed to support multiple languages, offering a versatile and inclusive communication experience for users worldwide.",
+      "title": "Is TalentOllie available in multiple languages?",
+      "desc": "Yes, TalentOllie is designed to support multiple languages, offering a versatile and inclusive communication experience for users worldwide.",
       "isExpand": false
     }
   ]

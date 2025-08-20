@@ -1,11 +1,8 @@
 import { useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useAppContext } from "@/context/Context";
 
-import logoLight from "../../public/images/logo/logo.png";
-import logoDark from "../../public/images/light/logo/logo-dark.png";
-
+import TalentOllieLogo from "../Common/TalentOllieLogo";
 import Nav from "./Nav";
 import SmallNav from "./SmallNav";
 
@@ -35,15 +32,7 @@ const PopupMobileMenu = () => {
         <div className="inner-popup">
           <div className="header-top">
             <div className="logo">
-              <Link href="/">
-                <Image
-                  className="logo-light"
-                  src={isLightTheme ? logoLight : logoDark}
-                  width={116}
-                  height={30}
-                  alt="Corporate Logo"
-                />
-              </Link>
+              <TalentOllieLogo width={150} height={25} priority={true} />
             </div>
             <div className="close-menu">
               <button

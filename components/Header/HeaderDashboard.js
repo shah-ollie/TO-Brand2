@@ -1,11 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import { useAppContext } from "@/context/Context";
 
-import logo from "../../public/images/logo/logo.png";
-import logoDark from "../../public/images/light/logo/logo-dark.png";
+import TalentOllieLogo from "../Common/TalentOllieLogo";
 import avatar from "../../public/images/team/team-01sm.jpg";
-
 import Nav from "./Nav";
 import UserMenu from "./UserMenu";
 
@@ -37,15 +33,7 @@ const HeaderDashboard = ({ display }) => {
                   </button>
                 </div>
                 <div className="logo">
-                  <Link href="/">
-                    <Image
-                      className="logo-light"
-                      src={isLightTheme ? logo : logoDark}
-                      width={135}
-                      height={35}
-                      alt="Corporate Logo"
-                    />
-                  </Link>
+                  <TalentOllieLogo width={180} height={30} priority={true} />
                 </div>
               </div>
             </div>

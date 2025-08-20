@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
             <div className="content-page pb--50">
               <div className="chat-box-list">
                 <div className="content">
-                  <h4>Welcome to AiWavePrivacy Policy</h4>
+                  <h4>Welcome to TalentOlliePrivacy Policy</h4>
                   <ol>
                     <li>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,

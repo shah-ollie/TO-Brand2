@@ -10,13 +10,13 @@ const DarkSwitch = ({ isLight, switchTheme }) => {
         {isLight ? (
           <li>
             <button data-theme="light" className="setColor light">
-              <Image src={dark} alt="Sun images" />
+              <Image src={light} alt="Sun images" />
             </button>
           </li>
         ) : (
           <li>
             <button data-theme="dark" className="setColor dark">
-              <Image src={light} alt="Vector Images" />
+              <Image src={dark} alt="Vector Images" />
             </button>
           </li>
         )}

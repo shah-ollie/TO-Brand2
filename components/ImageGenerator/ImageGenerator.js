@@ -99,7 +99,7 @@ const ImageGenerator = () => {
                         src={innerData.aiImg}
                         width={41}
                         height={41}
-                        alt="AiWave"
+                        alt="TalentOllie"
                       />
                     </div>
                     <div className="chat-content">

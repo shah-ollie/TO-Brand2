@@ -15,7 +15,7 @@ const TermsPolicy = () => {
             <div className="content-page">
               <div className="chat-box-list">
                 <div className="content">
-                  <h4>Welcome to AiWave Privacy Policy</h4>
+                  <h4>Welcome to TalentOllie Privacy Policy</h4>
                   <ol className="rbt-terms-content">
                     <li>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,

@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-
 import { useAppContext } from "@/context/Context";
 
-import logo from "../../public/images/logo/logo.png";
-import logoDark from "../../public/images/light/logo/logo-dark.png";
+import TalentOllieLogo from "../Common/TalentOllieLogo";
 import Nav from "./Nav";
 import DarkSwitch from "./dark-switch";
 
@@ -42,27 +39,7 @@ const Header = ({ headerTransparent, headerSticky, btnClass }) => {
           <div className="row align-items-center row--0">
             <div className="col-lg-2 col-md-6 col-6">
               <div className="logo">
-                <Link href="/">
-                  {isLightTheme ? (
-                    <Image
-                      className="logo-light"
-                      src={logo}
-                      width={135}
-                      height={35}
-                      priority={true}
-                      alt="ChatBot Logo"
-                    />
-                  ) : (
-                    <Image
-                      className="logo-light"
-                      src={logoDark}
-                      width={135}
-                      height={35}
-                      priority={true}
-                      alt="ChatBot Logo"
-                    />
-                  )}
-                </Link>
+                <TalentOllieLogo width={200} height={33} priority={true} />
               </div>
             </div>
 

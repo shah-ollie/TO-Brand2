@@ -12,28 +12,28 @@
           "isSelect": false,
           "isShow": false,
           "classNum": "one",
-          "subTitle": "Basic",
-          "title": "For large teams & corportaions",
-          "price": "Free",
+          "subTitle": "Seed",
+          "title": "For growing teams (0-100 employees)",
+          "price": "$399",
           "priceFor": "/Per Month",
-          "limited": "Limited Offer",
+          "limited": "14-Day Free Trial",
           "text": "Features",
           "iconClass": "fa-regular fa-circle-radiation",
           "listItem": [
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "A4S™ Framework Implementation"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Voice-First AI Screening"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "5 AI Agents (Talk, Scout, TrueFit, Engage, AIQ)"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "100+ Platform Integration"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Basic Analytics Dashboard"
             }
           ]
         },
@@ -43,37 +43,37 @@
           "isSelect": true,
           "isShow": true,
           "classNum": "two",
-          "subTitle": "Premium",
-          "title": "For large teams & corportaions",
-          "price": "$60.50",
+          "subTitle": "Growth",
+          "title": "For scaling teams (101-200 employees)",
+          "price": "$699",
           "priceFor": "/Per Month",
-          "limited": "Limited Offer",
+          "limited": "Most Popular",
           "text": "Features",
           "iconClass": "fa-sharp fa-regular fa-flower",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "Everything in Seed"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Advanced AI Screening Models"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "10 AI Agents including Ollie Ensure"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Custom Integration Support"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Advanced Analytics & ROI Tracking"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Priority Support"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Multi-location Support"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "API Access"
             }
           ]
         },
@@ -83,37 +83,37 @@
           "isSelect": false,
           "isShow": true,
           "classNum": "three",
-          "subTitle": "Enterprise",
-          "title": "For large teams & corportaions",
-          "price": "$80.50",
+          "subTitle": "Scale",
+          "title": "For enterprises (201-500 employees)",
+          "price": "$999",
           "priceFor": "/Per Month",
-          "limited": "Limited Offer",
+          "limited": "Enterprise Ready",
           "text": "Features",
           "iconClass": "fa-sharp fa-regular fa-waveform-lines",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "Everything in Growth"
             },
             {
-              "text": "6+ Naive development"
+              "text": "White-label Solution"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Custom AI Model Training"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Dedicated Customer Success Manager"
             },
             {
-              "text": "6+ Naive development"
+              "text": "SOC 2 Compliance"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Custom Workflows & Automation"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Advanced Security Controls"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "24/7 Premium Support"
             }
           ]
         }
@@ -131,28 +131,28 @@
           "isSelect": false,
           "isShow": false,
           "classNum": "one",
-          "subTitle": "Basic",
-          "title": "For large teams & corportaions",
-          "price": "Free",
+          "subTitle": "Seed",
+          "title": "For growing teams (0-100 employees)",
+          "price": "$3,990",
           "priceFor": "/Per Year",
-          "limited": "Limited Offer",
+          "limited": "Save 17% annually",
           "text": "Features",
           "iconClass": "fa-regular fa-circle-radiation",
           "listItem": [
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "A4S™ Framework Implementation"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Voice-First AI Screening"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "5 AI Agents (Talk, Scout, TrueFit, Engage, AIQ)"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "100+ Platform Integration"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Basic Analytics Dashboard"
             }
           ]
         },
@@ -162,37 +162,37 @@
           "isSelect": true,
           "isShow": true,
           "classNum": "two",
-          "subTitle": "Premium",
-          "title": "For large teams & corportaions",
-          "price": "$499.00",
+          "subTitle": "Growth",
+          "title": "For scaling teams (101-200 employees)",
+          "price": "$6,990",
           "priceFor": "/Per Year",
-          "limited": "Limited Offer",
+          "limited": "Most Popular - Save 17%",
           "text": "Features",
           "iconClass": "fa-sharp fa-regular fa-flower",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "Everything in Seed"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Advanced AI Screening Models"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "10 AI Agents including Ollie Ensure"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Custom Integration Support"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Advanced Analytics & ROI Tracking"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Priority Support"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Multi-location Support"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "API Access"
             }
           ]
         },
@@ -202,37 +202,37 @@
           "isSelect": false,
           "isShow": true,
           "classNum": "three",
-          "subTitle": "Enterprise",
-          "title": "For large teams & corportaions",
-          "price": "$599.00",
+          "subTitle": "Scale",
+          "title": "For enterprises (201-500 employees)",
+          "price": "$9,990",
           "priceFor": "/Per Year",
-          "limited": "Limited Offer",
+          "limited": "Enterprise Ready - Save 17%",
           "text": "Features",
           "iconClass": "fa-sharp fa-regular fa-waveform-lines",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "Everything in Growth"
             },
             {
-              "text": "6+ Naive development"
+              "text": "White-label Solution"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Custom AI Model Training"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Dedicated Customer Success Manager"
             },
             {
-              "text": "6+ Naive development"
+              "text": "SOC 2 Compliance"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Custom Workflows & Automation"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Advanced Security Controls"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "24/7 Premium Support"
             }
           ]
         }

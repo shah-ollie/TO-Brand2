@@ -22,7 +22,7 @@ const CtaOne = () => {
                 data-sal-duration="400"
                 data-sal-delay="200"
               >
-                Join our aI Experts community
+                Ready to transform your hiring?
               </h4>
               <p
                 className="sal-animate"
@@ -30,8 +30,8 @@ const CtaOne = () => {
                 data-sal-duration="400"
                 data-sal-delay="300"
               >
-                Meet and learn from 80+ creators & companies who share how thay
-                use AI to create better content at lightning speed.
+                Join 800+ forward-thinking companies using TalentOllie's A4S™ framework
+                to achieve first-time-right hiring decisions.
               </p>
             </div>
           </div>
@@ -52,8 +52,8 @@ const CtaOne = () => {
                   alt="Group Image"
                 />
               </div>
-              <Link className="btn-default" href="#">
-                Join Now Today Free
+              <Link className="btn-default" href="/contact">
+                Book Your Demo Today
               </Link>
             </div>
           </div>

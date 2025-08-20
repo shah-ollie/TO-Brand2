@@ -34,272 +34,163 @@
     },
     {
       "link": "#",
-      "text": "Tools",
+      "text": "Product",
       "isIcon": true,
       "isMenu": true,
       "dropdown": true,
       "subItem": [
         {
+          "link": "/utilize",
+          "isDisable": false,
+          "title": "A4S™ Framework",
+          "badge": ""
+        },
+        {
           "link": "/text-generator",
           "isDisable": false,
-          "title": "Text Generator",
-          "badge": ""
+          "title": "Ollie Talk - Voice Screening",
+          "badge": "Unique"
         },
         {
           "link": "/image-generator",
           "isDisable": false,
-          "title": "Image Generator",
+          "title": "Ollie Scout - AI Sourcing",
           "badge": ""
         },
         {
           "link": "/code-generator",
           "isDisable": false,
-          "title": "Code Generator",
+          "title": "Ollie TrueFit - Cultural Fit",
           "badge": ""
         },
         {
           "link": "/image-editor",
           "isDisable": false,
-          "title": "Image Editor",
+          "title": "Ollie AIQ - Analytics",
           "badge": ""
         },
         {
           "link": "/vedio-generator",
           "isDisable": false,
-          "title": "Video Generator",
+          "title": "Ollie Ensure - Onboarding",
           "badge": ""
         },
         {
           "link": "/email-generator",
           "isDisable": false,
-          "title": "Email generator",
+          "title": "All AI Agents",
           "badge": ""
-        },
-        {
-          "link": "#",
-          "isDisable": true,
-          "title": "Audio Generator",
-          "badge": "Coming"
-        },
-        {
-          "link": "#",
-          "isDisable": true,
-          "title": "Edu.feedback",
-          "badge": "Coming"
-        },
-        {
-          "link": "#",
-          "isDisable": true,
-          "title": "Website Generator",
-          "badge": "Coming"
         }
       ]
     },
     {
       "link": "#",
-      "text": "Pages",
+      "text": "Solutions",
       "isIcon": true,
       "isMenu": true,
       "megamenu": true,
       "inner": [
         {
-          "heading": "Inner Pages",
+          "heading": "By Role",
           "isComing": false
         },
         {
-          "link": "/styleguide",
-          "text": "Style Guide",
-          "badge": "Hot",
-          "isComing": false
-        },
-        {
-          "link": "/blog",
-          "text": "Blog",
+          "link": "/utilize",
+          "text": "HR Directors",
           "badge": "",
           "isComing": false
         },
         {
-          "link": "/blog-details",
-          "text": "Blog Details",
+          "link": "/utilize",
+          "text": "Talent Acquisition",
           "badge": "",
           "isComing": false
         },
         {
-          "link": "/pricing",
-          "text": "Pricing",
-          "badge": "",
-          "isComing": false
-        },
-
-        {
-          "link": "/contact",
-          "text": "Contact",
+          "link": "/utilize",
+          "text": "Recruiting Ops",
           "badge": "",
           "isComing": false
         },
         {
-          "link": "/signin",
-          "text": "Sign In",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/signup",
-          "text": "Sign Up",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/team",
-          "text": "Team",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/terms-policy",
-          "text": "Terms & Policy",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/privacy-policy",
-          "text": "Privacy Policy",
+          "link": "/utilize",
+          "text": "VP People",
           "badge": "",
           "isComing": false
         }
       ],
       "dashboard": [
         {
-          "heading": "DASHBOARD PAGES",
+          "heading": "By Company Size",
           "isComing": false
         },
         {
-          "link": "/profile-details",
-          "text": "Profile",
+          "link": "/pricing",
+          "text": "Seed (0-100 employees)",
           "badge": "",
           "isComing": false
         },
         {
-          "link": "/notification",
-          "text": "Notification",
+          "link": "/pricing",
+          "text": "Growth (101-200)",
           "badge": "",
           "isComing": false
         },
         {
-          "link": "/chat-export",
-          "text": "Chat Export",
+          "link": "/pricing",
+          "text": "Scale (201-500)",
           "badge": "",
           "isComing": false
         },
         {
-          "link": "/appearance",
-          "text": "Apperance",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/plans-billing",
-          "text": "Plans and Billing",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/sessions",
-          "text": "Sessions",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/application",
-          "text": "Application",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/release-notes",
-          "text": "Release notes",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/help",
-          "text": "Help & FAQs",
+          "link": "/pricing",
+          "text": "Enterprise (501+)",
           "badge": "",
           "isComing": false
         }
       ],
       "upcoming": [
         {
-          "heading": "Upcoming Advance Elements",
-          "isComing": true
+          "heading": "Resources",
+          "isComing": false
         },
         {
-          "link": "#",
-          "text": "Product Description",
-          "badge": "Coming",
-          "isComing": true
+          "link": "/help",
+          "text": "Help & Support",
+          "badge": "",
+          "isComing": false
         },
         {
-          "link": "#",
-          "text": "Youtube Vedio to Post",
-          "badge": "Coming",
-          "isComing": true
+          "link": "/roadmap",
+          "text": "Product Roadmap",
+          "badge": "",
+          "isComing": false
         },
         {
-          "link": "#",
-          "text": "Grammar Check",
-          "badge": "Coming",
-          "isComing": true
+          "link": "/contact",
+          "text": "Contact Sales",
+          "badge": "",
+          "isComing": false
         },
         {
-          "link": "#",
-          "text": "Generate From RSS",
-          "badge": "Coming",
-          "isComing": true
-        },
-        {
-          "link": "#",
-          "text": "Vedio Script",
-          "badge": "Coming",
-          "isComing": true
-        },
-        {
-          "link": "#",
-          "text": "Audio to Text",
-          "badge": "Coming",
-          "isComing": true
-        },
-        {
-          "link": "#",
-          "text": "Subscription",
-          "badge": "Coming",
-          "isComing": true
-        },
-        {
-          "link": "#",
-          "text": "Maintanence",
-          "badge": "Coming",
-          "isComing": true
-        },
-        {
-          "link": "#",
-          "text": "Coming Soon",
-          "badge": "Coming",
-          "isComing": true
+          "link": "/team",
+          "text": "About Team",
+          "badge": "",
+          "isComing": false
         }
       ]
     },
     {
-      "link": "/roadmap",
+      "link": "/pricing",
       "isIcon": false,
       "isMenu": false,
-      "text": "Roadmap"
+      "text": "Pricing"
     },
     {
-      "link": "/utilize",
+      "link": "/contact",
       "isIcon": false,
       "isMenu": false,
-      "text": "How to use"
+      "text": "Contact"
     }
   ],
   "smallNavItem": [

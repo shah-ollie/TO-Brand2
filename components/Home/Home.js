@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Sal from "sal.js";
@@ -33,18 +33,156 @@ import CtaTwo from "../CallToActions/Cta-Two";
 import { useAppContext } from "@/context/Context";
 
 const Home = () => {
-  const [visibleIndex, setVisibleIndex] = useState(0);
+  const [showATS, setShowATS] = useState(true);
+  const [isDisintegrating, setIsDisintegrating] = useState(false);
+  const [showAgentic, setShowAgentic] = useState(false);
+  const [typewriterText, setTypewriterText] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+  const [currentMetricIndex, setCurrentMetricIndex] = useState(0);
+  const [isTypewriterActive, setIsTypewriterActive] = useState(false);
   const { isLightTheme } = useAppContext();
+  
+  // Refs to manage the typewriter state machine
+  const typewriterStateRef = useRef({ phase: 'idle', charIndex: 0, metricIndex: 0 });
+  const typewriterTimerRef = useRef(null);
+
+  const atsText = "Application Tracking System";
+  const agenticText = "Agentic Talent Stack";
+  const rotatingMetrics = [
+    "5-10× Faster Screening",
+    "90% Faster Workflows",
+    "40% Less Ghosting", 
+    "Voice-First Innovation"
+  ];
+
+  // ThanosText component for letter-by-letter animation
+  const ThanosText = ({ text, isDisintegrating }) => {
+    return text.split('').map((letter, index) => (
+      <span 
+        key={index}
+        className={isDisintegrating ? 'letter-disintegrate' : ''}
+        style={{
+          display: 'inline-block',
+          animationDelay: `${index * 0.04}s`
+        }}
+      >
+        {letter === ' ' ? '\u00A0' : letter}
+      </span>
+    ));
+  };
+
+  // Typewriter component for rotating metrics
+  const TypewriterText = ({ text, isActive }) => {
+    if (!isActive) return null;
+    
+    return (
+      <span className="typewriter-text theme-gradient">
+        {text}
+      </span>
+    );
+  };
+
+  // Production-ready typewriter state machine
+  const runTypewriterCycle = () => {
+    const state = typewriterStateRef.current;
+    const currentText = rotatingMetrics[state.metricIndex];
+    
+    // Clear any existing timer
+    if (typewriterTimerRef.current) {
+      clearTimeout(typewriterTimerRef.current);
+    }
+    
+    switch (state.phase) {
+      case 'typing':
+        if (state.charIndex < currentText.length) {
+          // Type next character
+          setTypewriterText(currentText.substring(0, state.charIndex + 1));
+          state.charIndex++;
+          typewriterTimerRef.current = setTimeout(runTypewriterCycle, 80);
+        } else {
+          // Typing complete, switch to hold phase
+          state.phase = 'holding';
+          typewriterTimerRef.current = setTimeout(runTypewriterCycle, 1500);
+        }
+        break;
+        
+      case 'holding':
+        // Hold complete, switch to erasing phase
+        state.phase = 'erasing';
+        typewriterTimerRef.current = setTimeout(runTypewriterCycle, 30);
+        break;
+        
+      case 'erasing':
+        if (state.charIndex > 0) {
+          // Erase character
+          state.charIndex--;
+          setTypewriterText(currentText.substring(0, state.charIndex));
+          typewriterTimerRef.current = setTimeout(runTypewriterCycle, 30);
+        } else {
+          // Erasing complete, switch to next metric
+          state.phase = 'pausing';
+          setIsTyping(false);
+          typewriterTimerRef.current = setTimeout(runTypewriterCycle, 500);
+        }
+        break;
+        
+      case 'pausing':
+        // Move to next metric and start typing again
+        state.metricIndex = (state.metricIndex + 1) % rotatingMetrics.length;
+        setCurrentMetricIndex(state.metricIndex);
+        state.phase = 'typing';
+        state.charIndex = 0;
+        setIsTyping(true);
+        typewriterTimerRef.current = setTimeout(runTypewriterCycle, 100);
+        break;
+        
+      default:
+        // Initialize typing
+        state.phase = 'typing';
+        state.charIndex = 0;
+        state.metricIndex = 0;
+        setIsTyping(true);
+        setCurrentMetricIndex(0);
+        typewriterTimerRef.current = setTimeout(runTypewriterCycle, 100);
+        break;
+    }
+  };
+  
+  // Clean up typewriter
+  const stopTypewriter = () => {
+    if (typewriterTimerRef.current) {
+      clearTimeout(typewriterTimerRef.current);
+      typewriterTimerRef.current = null;
+    }
+    typewriterStateRef.current = { phase: 'idle', charIndex: 0, metricIndex: 0 };
+    setIsTypewriterActive(false);
+    setIsTyping(false);
+  };
 
   useEffect(() => {
     Sal();
 
-    const intervalId = setInterval(() => {
-      setVisibleIndex((prevIndex) => (prevIndex + 1) % 3);
+    // Thanos snap animation sequence
+    const thanosSequence = setTimeout(() => {
+      setIsDisintegrating(true);
+      
+      // Wait for letters to finish disintegrating
+      setTimeout(() => {
+        setShowATS(false);
+        setShowAgentic(true);
+      }, 1200); // Extended for letter animation
     }, 2000);
 
+    // Start typewriter animation after Agentic appears
+    const typewriterStart = setTimeout(() => {
+      setIsTypewriterActive(true);
+      runTypewriterCycle();
+    }, 4000);
+
     return () => {
-      clearInterval(intervalId);
+      clearTimeout(thanosSequence);
+      clearTimeout(typewriterStart);
+      stopTypewriter();
     };
   }, []);
 
@@ -59,58 +197,48 @@ const Home = () => {
             <div className="col-lg-12">
               <div className="inner text-center mt--140">
                 <h1 className="title display-one">
-                  Examine the Potential of
-                  <br />{" "}
-                  <span className="header-caption">
-                    <span className="cd-headline rotate-1">
-                      <span className="cd-words-wrapper">
-                        <b
-                          className={
-                            visibleIndex === 0
-                              ? "is-visible theme-gradient"
-                              : "is-hidden theme-gradient"
-                          }
-                        >
-                          AI Chating
-                        </b>
-                        <b
-                          className={
-                            visibleIndex === 1
-                              ? "is-visible theme-gradient"
-                              : "is-hidden theme-gradient"
-                          }
-                        >
-                          AI Writing
-                        </b>
-                        <b
-                          className={
-                            visibleIndex === 2
-                              ? "is-visible theme-gradient"
-                              : "is-hidden theme-gradient"
-                          }
-                        >
-                          AI Chating
-                        </b>
+                  The World's First<br />
+                  <span className="thanos-container">
+                    {showATS && (
+                      <span className="theme-gradient">
+                        <ThanosText text={atsText} isDisintegrating={isDisintegrating} />
+                      </span>
+                    )}
+                    {showAgentic && (
+                      <span className="theme-gradient thanos-fade-in">
+                        {agenticText}
+                      </span>
+                    )}
+                  </span>
+                  <br />
+                  <div className="subtitle-line-container">
+                    <span className="subtitle-line">
+                      <span className="with-text">with&nbsp;&nbsp;</span>
+                      <span className="typewriter-container">
+                        {isTyping && (
+                          <span className="typewriter-text theme-gradient">
+                            {typewriterText}
+                            <span className="typewriter-cursor">|</span>
+                          </span>
+                        )}
                       </span>
                     </span>
-                  </span>{" "}
-                  AI Hack
+                  </div>
                 </h1>
                 <p className="description">
-                  Unleash Brainwave's AI potential. Use the open AI <br />{" "}
-                  conversation app Rainbow theme
+                  Where AI agents orchestrate perfect hiring decisions. <br />
+                  Powered by the revolutionary A4S™ Framework.
                 </p>
                 <div className="form-group">
-                  <textarea
-                    name="text"
-                    id="slider-text-area"
-                    cols="30"
-                    rows="2"
-                    placeholder="Enter a prompt, for example: a fundraising deck to a mobile finance app called Intuitive"
-                  ></textarea>
-                  <Link className="btn-default " href="/text-generator">
-                    Start with AI
-                  </Link>
+                  <div className="cta-buttons d-flex flex-column flex-md-row justify-content-center gap-4">
+                    <Link className="btn-default btn-large" href="/contact">
+                      See Voice-First Screening in Action{" "}
+                      <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>
+                    </Link>
+                    <Link className="btn-default btn-large color-blacked" href="/signin">
+                      Start 14-Day Free Trial
+                    </Link>
+                  </div>
                 </div>
                 <div className="inner-shape">
                   <Image
@@ -187,7 +315,7 @@ const Home = () => {
                 data-sal-delay="100"
               >
                 <p className="b1 mb--0 small-title">
-                  truest 800,000+ HIGHLY PRODUCTIVE Company
+                  Trusted by 800+ forward-thinking companies for first-time-right hiring
                 </p>
               </div>
             </div>
@@ -212,11 +340,11 @@ const Home = () => {
               >
                 <h4 className="subtitle">
                   <span className="theme-gradient">
-                    RAINBOW UNLOCKS THE POTENTIAL ai
+                    THE A4S™ FRAMEWORK POWERS PERFECT HIRING
                   </span>
                 </h4>
                 <h2 className="title mb--0">
-                  Generative AI made for <br /> creators.
+                  AI Agents orchestrate hiring <br /> from scorecard to onboarding.
                 </h2>
               </div>
             </div>
@@ -236,10 +364,10 @@ const Home = () => {
                 data-sal-delay="150"
               >
                 <h4 className="subtitle">
-                  <span className="theme-gradient">Assisting individuals</span>
+                  <span className="theme-gradient">Voice-First Innovation</span>
                 </h4>
                 <h2 className="title mb--60">
-                  Chat Smarter, Not <br /> Harder with
+                  Scale interviews 5-10× with <br /> Voice-First AI Screening
                 </h2>
               </div>
             </div>
@@ -270,17 +398,17 @@ const Home = () => {
                 data-sal-delay="100"
               >
                 <h4 className="subtitle ">
-                  <span className="theme-gradient">AI Collaboration</span>
+                  <span className="theme-gradient">Unified AI Platform</span>
                 </h4>
                 <h2 className="title mb--20">
-                  AI Chat app for seamless
-                  <br /> collaboration
+                  One platform for all hiring
+                  <br /> workflows and decisions
                 </h2>
                 <Link
                   className="btn-default btn-large color-blacked"
                   href="/contact"
                 >
-                  Try It Now{" "}
+                  Book a Demo{" "}
                   <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>
                 </Link>
               </div>
@@ -398,9 +526,9 @@ const Home = () => {
                 data-sal-delay="150"
               >
                 <h4 className="subtitle">
-                  <span className="theme-gradient">Assisting individuals</span>
+                  <span className="theme-gradient">Customer Success</span>
                 </h4>
-                <h2 className="title mb--60">The opinions of the community</h2>
+                <h2 className="title mb--60">What our customers achieve</h2>
               </div>
             </div>
           </div>

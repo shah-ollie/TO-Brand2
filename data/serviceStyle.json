@@ -2,53 +2,53 @@
   "serviceOne": [
     {
       "img": "/images/icons/service-icon-01.svg",
-      "title": "Ask anything",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Scorecard",
+      "desc": "AI-assisted outcome scorecards define role success with precision, creating evidence-backed hiring criteria."
     },
     {
       "img": "/images/icons/service-icon-02.svg",
-      "title": "Connect everywhere",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Source",
+      "desc": "Orchestrated sourcing across 100+ platforms using predictive models to find perfect-fit candidates."
     },
     {
       "img": "/images/icons/service-icon-03.svg",
-      "title": "Fast responding",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Select",
+      "desc": "Voice-first AI screening scales human-like interviews 5-10× faster than traditional methods."
     },
     {
       "img": "/images/icons/service-icon-01.svg",
-      "title": "Ask anything",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Sell",
+      "desc": "Continuous engagement reduces ghosting 40% and pre-join drop-off 30% through intelligent nurturing."
     },
     {
       "img": "/images/icons/service-icon-02.svg",
-      "title": "Connect everywhere",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Analytics",
+      "desc": "Predictive analytics dashboards provide real-time insights for data-driven hiring decisions."
     },
     {
       "img": "/images/icons/service-icon-03.svg",
-      "title": "Fast responding",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Integration",
+      "desc": "Provider-agnostic platform integrates with existing HR tech stack for seamless workflow automation."
     }
   ],
   "serviceTwo": [
     {
       "img": "/images/service/service-icon-01.png",
       "imgLight": "/images/light/service/service-icon-01.png",
-      "title": "100% No-Risk, Money Back Guarantee!",
-      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+      "title": "Superior Unit Economics",
+      "desc": "CAC Payback of 1.4 months with 14:1 LTV:CAC ratio delivers exceptional ROI for hiring investments."
     },
     {
       "img": "/images/service/service-icon-02.png",
       "imgLight": "/images/light/service/service-icon-02.png",
-      "title": "Upgrade or Cancel Anytime",
-      "desc": "Passages there are many variations variations of of Lorem Ipsum available"
+      "title": "Enterprise-Grade Security",
+      "desc": "Global-first microservices architecture with SOC 2 compliance and provider-agnostic LLM flexibility."
     },
     {
       "img": "/images/service/service-icon-03.png",
       "imgLight": "/images/light/service/service-icon-03.png",
-      "title": "Not sure yet, try the free version",
-      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+      "title": "14-Day Free Trial",
+      "desc": "Experience the power of voice-first screening and A4S™ framework with no commitment required."
     }
   ]
 }

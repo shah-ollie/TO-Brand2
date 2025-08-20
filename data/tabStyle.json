@@ -1,166 +1,166 @@
 {
   "TabStyleOne": [
     {
-      "title": "Video generating AI refers to artificial intelligence.",
+      "title": "Voice-first AI screening scales interviews 5-10× faster than traditional methods.",
       "img": "/images/generator-img/chat-export-vedio.png",
       "imgLight": "/images/light/generator-img/chat-export-audio.png",
-      "menuId": "video-generator",
-      "text": "Vedio Generator",
-      "target": "video-generate",
+      "menuId": "ollie-talk",
+      "text": "Ollie Talk",
+      "target": "ollie-talk-generate",
       "iconImg": "/images/icons/video-g.png",
       "isSelect": false,
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Natural Language Processing"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "ElevenLabs Integration"
         },
         {
-          "text": "Pre-trained Models"
+          "text": "Real-time Analysis"
         },
         {
-          "text": "Variational Autoencoders"
+          "text": "Bias-free Evaluation"
         }
       ]
     },
     {
-      "title": "Audio generating AI refers to artificial intelligence.",
+      "title": "AI sourcing across 100+ platforms using predictive models to find perfect candidates.",
       "img": "/images/generator-img/chat-export-audio.png",
       "imgLight": "/images/light/generator-img/chat-export-audio.png",
-      "menuId": "audio-generator",
-      "text": "Audio Generator",
-      "target": "audio-generate",
+      "menuId": "ollie-scout",
+      "text": "Ollie Scout",
+      "target": "ollie-scout-generate",
       "iconImg": "/images/icons/audio-g.png",
       "isSelect": true,
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Multi-platform Integration"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Predictive Matching"
         },
         {
-          "text": "Pre-trained Models"
+          "text": "Automated Outreach"
         },
         {
-          "text": "Variational Autoencoders"
+          "text": "Response Tracking"
         }
       ]
     },
     {
-      "title": "Photo generating AI refers to artificial intelligence.",
+      "title": "Predictive cultural fit assessment ensures long-term employee success and retention.",
       "img": "/images/generator-img/chat-export-photo.png",
       "imgLight": "/images/light/generator-img/chat-export-audio.png",
-      "menuId": "photo-generator",
-      "text": "Photo Generator",
-      "target": "photo-generate",
+      "menuId": "ollie-truefit",
+      "text": "Ollie TrueFit",
+      "target": "ollie-truefit-generate",
       "iconImg": "/images/icons/photo-g.png",
       "isSelect": false,
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Psychometric Analysis"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Cultural Fit Scoring"
         },
         {
-          "text": "Pre-trained Models"
+          "text": "Team Compatibility"
         },
         {
-          "text": "Variational Autoencoders"
+          "text": "Retention Prediction"
         }
       ]
     },
     {
-      "title": "Text generating AI refers to artificial intelligence.",
+      "title": "24/7 conversational AI maintains candidate engagement throughout the hiring process.",
       "img": "/images/generator-img/chat-export.png",
       "imgLight": "/images/light/generator-img/chat-export-audio.png",
-      "menuId": "text-generator",
-      "text": "Text Generator",
-      "target": "text-generate",
+      "menuId": "ollie-engage",
+      "text": "Ollie Engage",
+      "target": "ollie-engage-generate",
       "iconImg": "/images/icons/text-g.png",
       "isSelect": false,
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Conversational AI"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Automated Nurturing"
         },
         {
-          "text": "Pre-trained Models"
+          "text": "Personalized Messaging"
         },
         {
-          "text": "Variational Autoencoders"
+          "text": "Engagement Analytics"
         }
       ]
     },
     {
-      "title": "Code generating AI refers to artificial intelligence.",
+      "title": "Predictive analytics dashboards provide real-time insights for data-driven hiring decisions.",
       "img": "/images/generator-img/chat-export-code.png",
       "imgLight": "/images/light/generator-img/chat-export-audio.png",
-      "menuId": "code-generator",
-      "text": "Code Generator",
-      "target": "code-generate",
+      "menuId": "ollie-aiq",
+      "text": "Ollie AIQ",
+      "target": "ollie-aiq-generate",
       "iconImg": "/images/icons/code-g.png",
       "isSelect": false,
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Predictive Analytics"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Real-time Dashboards"
         },
         {
-          "text": "Pre-trained Models"
+          "text": "ROI Tracking"
         },
         {
-          "text": "Variational Autoencoders"
+          "text": "Performance Metrics"
         }
       ]
     }
   ],
   "advanceTab": [
     {
-      "tabId": "home",
-      "target": "home-tab",
+      "tabId": "scorecard",
+      "target": "scorecard-tab",
       "isSelect": true,
-      "menuText": "Connect with AI",
+      "menuText": "Scorecard",
       "img": "/images/split/split-1.png",
-      "subTitle": "How it work",
-      "title": "Connect with Al chatbot",
-      "desc": "Dentify the platform or interface through which you can access the chatbot. This could be a website, a messaging app, or a dedicated application."
+      "subTitle": "A4S™ Framework Step 1",
+      "title": "Define Success Criteria",
+      "desc": "AI-assisted outcome scorecards define role success with precision, creating evidence-backed hiring criteria that ensure first-time-right decisions."
     },
     {
-      "tabId": "profile",
-      "target": "profile-tab",
+      "tabId": "source",
+      "target": "source-tab",
       "isSelect": false,
-      "menuText": "Streamline Workflow",
+      "menuText": "Source",
       "img": "/images/split/split-4.png",
-      "subTitle": "Exploring Efficiency",
-      "title": "Streamline Your Workflow",
-      "desc": "Discover tools and techniques to optimize your workflow, making your tasks more efficient and manageable."
+      "subTitle": "A4S™ Framework Step 2",
+      "title": "Orchestrated Talent Sourcing",
+      "desc": "Predictive models scan 100+ platforms simultaneously, identifying and engaging perfect-fit candidates with automated precision."
     },
     {
-      "tabId": "contact",
-      "target": "contact-tab",
+      "tabId": "select",
+      "target": "select-tab",
       "isSelect": false,
-      "menuText": "Cybersecurity",
+      "menuText": "Select",
       "img": "/images/split/split-3.png",
-      "subTitle": "Navigating Cybersecurity",
-      "title": "Protecting Your Digital Presence",
-      "desc": "Gain insights into cybersecurity measures and strategies to safeguard your online identity and sensitive information."
+      "subTitle": "A4S™ Framework Step 3",
+      "title": "Voice-First AI Screening",
+      "desc": "Revolutionary voice-first technology conducts human-like interviews at scale, processing 5-10× more candidates with unbiased evaluation."
     },
     {
-      "tabId": "contact",
-      "target": "contact-tab",
+      "tabId": "sell",
+      "target": "sell-tab",
       "isSelect": false,
-      "menuText": "Data Analysis",
+      "menuText": "Sell",
       "img": "/images/split/split-5.png",
-      "subTitle": "Mastering Data Analysis",
-      "title": "Demystifying Data Analytics",
-      "desc": "Learn the fundamentals of data analysis, including tools and methodologies, to extract meaningful insights from raw data."
+      "subTitle": "A4S™ Framework Step 4",
+      "title": "Continuous Candidate Engagement",
+      "desc": "AI-powered nurturing reduces ghosting by 40% and pre-join drop-off by 30% through intelligent, personalized communication."
     }
   ]
 }

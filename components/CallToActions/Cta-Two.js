@@ -28,34 +28,23 @@ const CtaTwo = () => {
                 >
                   <h4 className="subtitle">
                     <span className="theme-gradient">
-                      Get Started with Rainbow
+                      Start Your Free Trial
                     </span>
                   </h4>
                   <h2 className="title w-600 mb--20">
-                    Experience Products in AI
+                    Experience the Future of Hiring
                   </h2>
                   <p className="description b1">
-                    Based on the conversation with the AI chatbot, you will
-                    receive <br />
-                    personalized recommendations.
+                    Get started with TalentOllie's A4S™ framework today. <br />
+                    14-day free trial with full access to all AI agents.
                   </p>
                 </div>
                 <div className="app-store-btn">
-                  <Link className="store-btn" href="#">
-                    <Image
-                      src={playApp}
-                      width={157}
-                      height={55}
-                      alt="Play Store Button"
-                    />
+                  <Link className="btn-default btn-large mr--15" href="/signin">
+                    Start Free Trial
                   </Link>
-                  <Link className="store-btn" href="#">
-                    <Image
-                      src={appleApp}
-                      width={157}
-                      height={55}
-                      alt="Apple Store Button"
-                    />
+                  <Link className="btn-default btn-large color-blacked" href="/contact">
+                    Book a Demo
                   </Link>
                 </div>
               </div>

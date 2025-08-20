@@ -12,6 +12,7 @@ import "../node_modules/sal.js/dist/sal.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-tooltip/dist/react-tooltip.css";
+import "../public/css/thanos-animation.css";
 // ========= Plugins CSS END =========
 
 import "../public/scss/style.scss";

@@ -1,0 +1,267 @@
+/* Letter-by-Letter Thanos Disintegration */
+.letter-disintegrate {
+  animation: letterDisintegrate 0.8s ease-out forwards;
+  position: relative;
+  display: inline-block;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+
+.letter-disintegrate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, 
+    rgba(255, 215, 0, 0.4) 0%, 
+    rgba(255, 165, 0, 0.3) 40%, 
+    transparent 70%);
+  animation: letterParticle 0.8s ease-out forwards;
+  pointer-events: none;
+}
+
+.letter-disintegrate::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  background: #ffd700;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: letterSparkle 0.8s ease-out forwards;
+  box-shadow: 
+    0 0 4px #ffd700,
+    2px 2px 2px rgba(255, 215, 0, 0.6),
+    -2px -2px 2px rgba(255, 165, 0, 0.6);
+}
+
+@keyframes letterDisintegrate {
+  0% { 
+    opacity: 1; 
+    transform: translateY(0) translateX(0) rotateZ(0deg) scale(1);
+    filter: blur(0);
+  }
+  30% {
+    opacity: 0.9;
+    transform: translateY(-3px) translateX(-1px) rotateZ(2deg) scale(1.02);
+    filter: blur(0.5px);
+  }
+  60% {
+    opacity: 0.6;
+    transform: translateY(-8px) translateX(2px) rotateZ(-3deg) scale(1.05);
+    filter: blur(1px);
+  }
+  80% {
+    opacity: 0.3;
+    transform: translateY(-15px) translateX(-3px) rotateZ(5deg) scale(0.95);
+    filter: blur(2px);
+  }
+  100% { 
+    opacity: 0; 
+    transform: translateY(-25px) translateX(5px) rotateZ(8deg) scale(0.8);
+    filter: blur(3px);
+  }
+}
+
+@keyframes letterParticle {
+  0% { 
+    opacity: 0; 
+    transform: scale(0) rotate(0deg);
+  }
+  40% { 
+    opacity: 0.6; 
+    transform: scale(1.5) rotate(90deg);
+  }
+  100% { 
+    opacity: 0; 
+    transform: scale(3) rotate(180deg) translateY(-20px);
+  }
+}
+
+@keyframes letterSparkle {
+  0% { 
+    opacity: 0; 
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% { 
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(2);
+  }
+  100% { 
+    opacity: 0; 
+    transform: translate(-50%, -50%) scale(0) translateY(-30px);
+  }
+}
+
+.thanos-fade-in {
+  animation: thanosAppear 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes thanosAppear {
+  0% { 
+    opacity: 0; 
+    transform: scale(0.8) translateY(20px);
+    filter: blur(5px);
+  }
+  50% { 
+    opacity: 0.7; 
+    transform: scale(1.05) translateY(0);
+    filter: blur(2px);
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Compact Hero Section Layout */
+.thanos-container {
+  display: inline-block;
+  min-height: 60px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Ensure both ATS and Agentic text have identical styling */
+.thanos-container .theme-gradient {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  text-transform: none !important;
+}
+
+.thanos-container span {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-transform: none !important;
+}
+
+.letter-disintegrate {
+  text-transform: none !important;
+}
+
+.subtitle-line-container {
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  width: 100%;
+}
+
+.subtitle-line {
+  font-size: 0.85em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.with-text {
+  color: inherit;
+  font-weight: 400;
+}
+
+.typewriter-container {
+  display: inline-block;
+  min-width: 280px;
+  text-align: left;
+  position: relative;
+}
+
+.typewriter-text {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+  color: transparent;
+  animation: blink 1s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .thanos-container {
+    min-height: 50px !important;
+  }
+  
+  .subtitle-line-container {
+    min-height: 35px !important;
+  }
+  
+  .subtitle-line {
+    font-size: 0.8em !important;
+  }
+  
+  .typewriter-container {
+    min-width: 240px !important;
+  }
+  
+  .letter-disintegrate {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  .thanos-container {
+    min-height: 45px !important;
+  }
+  
+  .subtitle-line-container {
+    min-height: 32px !important;
+  }
+  
+  .subtitle-line {
+    font-size: 0.75em !important;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .typewriter-container {
+    min-width: 200px !important;
+  }
+  
+  .letter-disintegrate {
+    font-size: 0.9em;
+  }
+  
+  .typewriter-text {
+    font-size: 0.9em;
+  }
+}
+
+
+/* Ensure smooth transitions for all states */
+.metric {
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Fix for overlapping issue */
+.typewriter-container {
+  overflow: visible;
+  z-index: 1;
+}
+
+.thanos-container,
+.subtitle-line {
+  overflow: visible;
+}

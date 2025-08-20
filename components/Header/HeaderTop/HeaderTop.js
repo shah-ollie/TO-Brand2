@@ -4,6 +4,10 @@ import React from "react";
 
 const HeaderTop = () => {
   const { toggleTop, setToggle } = useAppContext();
+  return null; // Hidden promotional top bar
+  
+  // Commented out promotional top bar
+  /*
   return (
     <>
       <div
@@ -44,6 +48,7 @@ const HeaderTop = () => {
       </div>
     </>
   );
+  */
 };
 
 export default HeaderTop;
